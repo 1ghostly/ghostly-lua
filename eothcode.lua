@@ -856,8 +856,8 @@ OpenerFrame.Name = "OpenerFrame"
 OpenerFrame.Parent = EOTH
 OpenerFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 OpenerFrame.BackgroundTransparency = 1.000
-OpenerFrame.Position = UDim2.new(0.0039004772, 0, 0.925891519, 0)
-OpenerFrame.Size = UDim2.new(0, 74, 0, 73)
+OpenerFrame.Position = UDim2.new(0.00806931499, 0, 0.774965644, 0)
+OpenerFrame.Size = UDim2.new(0, 247, 0, 73)
 OpenerFrame.Image = "rbxassetid://3570695787"
 OpenerFrame.ImageColor3 = Color3.fromRGB(20, 20, 20)
 OpenerFrame.ScaleType = Enum.ScaleType.Slice
@@ -868,14 +868,15 @@ Open.Name = "Open"
 Open.Parent = OpenerFrame
 Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Open.BackgroundTransparency = 1.000
-Open.Size = UDim2.new(0, 74, 0, 73)
+Open.Position = UDim2.new(-0.00127058767, 0, 0.0273972601, 0)
+Open.Size = UDim2.new(0, 247, 0, 69)
 Open.Font = Enum.Font.Gotham
-Open.Text = ">"
+Open.Text = "EOTH"
 Open.TextColor3 = Color3.fromRGB(255, 255, 255)
 Open.TextSize = 60.000
 
 UIAspectRatioConstraint_2.Parent = OpenerFrame
-UIAspectRatioConstraint_2.AspectRatio = 1.014
+UIAspectRatioConstraint_2.AspectRatio = 3.384
 
 IntroFrame.Name = "IntroFrame"
 IntroFrame.Parent = EOTH
@@ -920,7 +921,7 @@ Handlers.Parent = EOTH
 
 -- Scripts:
 
-local function MVSBBX_fake_script() -- UIScripts.Dragify 
+local function YTZJGK_fake_script() -- UIScripts.Dragify 
 	local script = Instance.new('LocalScript', UIScripts)
 
 	local UIS = game:GetService("UserInputService")
@@ -961,8 +962,8 @@ local function MVSBBX_fake_script() -- UIScripts.Dragify
 	
 	dragify(script.Parent.Parent)
 end
-coroutine.wrap(MVSBBX_fake_script)()
-local function KVATK_fake_script() -- Handlers.MainHandler 
+coroutine.wrap(YTZJGK_fake_script)()
+local function KLDT_fake_script() -- Handlers.MainHandler 
 	local script = Instance.new('LocalScript', Handlers)
 
 	local openerFrame = script.Parent.Parent.OpenerFrame
@@ -980,7 +981,7 @@ local function KVATK_fake_script() -- Handlers.MainHandler
 	
 	
 	mainFrame.Position = UDim2.new(-1, 0, 0.5, 0)
-	openerFrame.Position = UDim2.new(-1, 0, 0.926, 0)
+	openerFrame.Position = UDim2.new(-0.5, 0, 0.775, 0)
 	introFrame.Position = UDim2.new(0.5, 0, -1, 0)
 	introFrame:TweenPosition(UDim2.new(0.5, 0, 0.5, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 2, true)
 	wait(2)
@@ -1020,17 +1021,17 @@ local function KVATK_fake_script() -- Handlers.MainHandler
 		wait(1)
 		introFrame:TweenPosition(UDim2.new(0.5, 0, -1, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 2, true)
 		wait(1)
-		openerFrame:TweenPosition(UDim2.new(0.004, 0, 0.926, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 1.5, true)
+		openerFrame:TweenPosition(UDim2.new(0.008, 0, 0.775, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 1.5, true)
 	end
 	
 	openerFrame.Open.MouseButton1Click:Connect(function()
-		openerFrame:TweenPosition(UDim2.new(-1, 0, 0.926, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 1.5, true)
+		openerFrame:TweenPosition(UDim2.new(-0.5, 0, 0.775, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 1.5, true)
 		mainFrame:TweenPosition(UDim2.new(0.5, 0, 0.5, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 1.5, true)
 	end)
 	
 	barButtons.Hide.MouseButton1Click:Connect(function()
 		mainFrame:TweenPosition(UDim2.new(-1, 0, 0.5, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 1.5, true)
-		openerFrame:TweenPosition(UDim2.new(0.004, 0, 0.926, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 1.5, true)
+		openerFrame:TweenPosition(UDim2.new(0.008, 0, 0.775, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 1.5, true)
 	end)
 	
 	barButtons.Minimize.MouseButton1Click:Connect(function()
@@ -1201,5 +1202,19 @@ local function KVATK_fake_script() -- Handlers.MainHandler
 		local tp = {CFrame = New_CFrame}
 		ts:Create(part, ti, tp):Play()
 	end)
+	
+	teleportFrame.Next.MouseButton1Click:Connect(function()
+		tp1.Visible = false
+		tp2.Visible = true
+		teleportFrame.Back.Visible = true
+		teleportFrame.Next.Visible = false
+	end)
+	
+	teleportFrame.Back.MouseButton1Click:Connect(function()
+		tp2.Visible = false
+		tp1.Visible = true
+		teleportFrame.Back.Visible = false
+		teleportFrame.Next.Visible = true
+	end)
 end
-coroutine.wrap(KVATK_fake_script)()
+coroutine.wrap(KLDT_fake_script)()
