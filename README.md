@@ -7,7 +7,7 @@ If you'd like you can contact me on Discord for help on anything or for future i
 
 EOTH is a game enhancement utility for the ROBLOX platform, specifically the title "Sword Fight on The Heights".
 Although you can use EOTH (Exploits on The Heights) on the regular edition of SFOTH it is recommended to be used
-in CloneTrooper098's Super Nostalgia Zone, as the gui functions best there.
+in CloneTrooper1019's Super Nostalgia Zone, as the gui functions best there.
 
 # Usage
 
