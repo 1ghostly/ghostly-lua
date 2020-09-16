@@ -1,17 +1,17 @@
-# EOTH
+# GOTH
 
-Thanks for checking out the EOTH repository, here you can view all of the code for EOTH and maybe even modify it yourself.
+Thanks for checking out the GOTH repository, here you can view all of the code for GOTH and maybe even modify it yourself.
 If you'd like you can contact me on Discord for help on anything or for future ideas at !ghostly#1337.
 
-# What is EOTH?
+# What is GOTH?
 
-EOTH is a game enhancement utility for the ROBLOX platform, specifically the title "Sword Fight on The Heights".
-Although you can use EOTH (Exploits on The Heights) on the regular edition of SFOTH it is recommended to be used
+GOTH is a game enhancement utility for the ROBLOX platform, specifically the title "Sword Fight on The Heights".
+Although you can use GOTH (Gods on The Heights) on the regular edition of SFOTH it is recommended to be used
 in CloneTrooper1019's Super Nostalgia Zone, as the gui functions best there.
 
 # Usage
 
-EOTH must be ran through a script executor with an at least level 6 identity.
+GOTH must be ran through a script executor with an at least level 6 identity.
 I highly recommend using Synapse X which can be found and purchased [here](https://x.synapse.to/) for $20 USD.
 Other reputable options include:
 - [Sentinel](https://elymltd.selly.store/product/a6576d71) $15 USD
