@@ -23,5 +23,5 @@ Other reputable options include:
 Obtaining and running the script is as easy as running this one line of code through your script executor.
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1ghostly/eoth/master/eothcode.lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1ghostly/eoth/master/gothcode.lua",true))()
 ```
