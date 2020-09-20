@@ -1,3 +1,5 @@
+--loadstring(game:HttpGet(('https://raw.githubusercontent.com/1ghostly/ghostly-lua/master/ghostly-sword-reach.lua'),true))()
+
 local CurrentSize = ""
 local CurrentGripPos = ""
 local Player = game:GetService("Players").LocalPlayer
